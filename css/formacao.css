@@ -4,41 +4,41 @@
 }
 
 .formacao-container{
+    display: grid;
+    gap: 100px;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
     max-width: 1200px;
     padding: 120px 20px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 100px;
     position: relative;
 }
 
 .formacao-container::after{
+    background: url(../img/detalhe.svg) no-repeat center;
+    bottom: -50px;
     content: "";
     display: block;
-    width: 130px;
     height: 100px;
-    background: url(../img/detalhe.svg) no-repeat center;
-    position: absolute;
-    bottom: -50px;
     left: 20px;
+    position: absolute;
+    width: 130px;
 }
 
 .formacao__subtitulo{
     color: #000000;
     font-size: 8rem ;
     line-height: 1;
+    max-width: 4ch;
     text-transform: uppercase;
     word-break: break-all;
-    max-width: 4ch;
 }
 
 .formacao__texto{
+    color: #a3a3a3;
     font-size: 1.5rem;
     line-height: 1.33;
     max-width: 40ch;
     margin-bottom: 60px;
-    color: #a3a3a3;
 }
 
 .formacao__texto strong{
@@ -54,17 +54,17 @@
 
 .faculdade{
     background: #000000;
-    padding: 20px;
     border-radius: 4px;
     display: flex;
     flex-direction: column;
+    padding: 20px;
 }
 
 .faculdade__tipo{
-    font-size: 0.875rem;
-    text-transform: uppercase;
     color: #a3a3a3;
+    font-size: 0.875rem;
     margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 .faculdade__curso{
@@ -77,16 +77,16 @@
 .faculdade__curso::before{
     content: "";
     display: block;
-    width: 10px;
-    height: 20px;
     background: linear-gradient(#b6f829, #67dd0a);
     position: absolute;
+    height: 20px;
     left: -24px;
+    width: 10px;
 }
 
 .faculdade__instituicao{
-    font-size: 1.125rem;
     color: #a3a3a3;
+    font-size: 1.125rem;
 
 }
 
@@ -95,22 +95,22 @@
 }
 
 .formacao-extra h3{
-    font-size: 0.875rem;
-    line-height: 1.5;
     color: #8f8f8f;
-    text-transform: uppercase;
+    line-height: 1.5;
+    font-size: 0.875rem;
     margin-bottom: 30px;
     position: relative;
+    text-transform: uppercase;
 }
 
 .formacao-extra h3::before{
     content: "";
     display: block;
-    width: 24px;
     height: 24px ;
-    position: absolute;
     left: -30px;
+    position: absolute;
     top: -2px;
+    width: 24px;
 }
 
 .cursos h3::before{
@@ -130,8 +130,8 @@
 }
 
 .formacao__texto span{
-        text-decoration: underline;
-        font-style: italic';
+    font-style: italic;
+    text-decoration: underline;
 }
 
 .formacao-extra span{
@@ -146,9 +146,9 @@
 
 @media (max-width: 800px){
     .formacao-container{
+        gap: 40x;
         grid-template-columns: 1fr;
         padding: 60px 20x;
-        gap: 40x;
     }
     .formacao__subtitulo{
         color: #ffffff;

@@ -1,22 +1,22 @@
 .experiencia{
+    display: grid;
+    gap: 100px;
+    grid-template-columns: 1fr 2fr;
+    margin: 0 auto;
     max-width: 1200px;
     padding: 40px 20px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 100px;
 }
 
 .experiencia__subtitulo{
-    color: #e0e0e0;
+    color: #86848493;
 }
 
 .experiencia__texto{
+    color: #525252;
     font-size: 1.5rem;
     line-height: 1.33;
     max-width: 40ch;
     margin-bottom: 60px;
-    color: #525252;
 }
 
 .experiencia__texto strong{
@@ -24,74 +24,74 @@
 }
 
 .trabalho{
+    background: #f5f5f5;
+    border-radius: 4px;
  display: grid;
- grid-template-columns: 1fr 1fr;
  gap: 10px 20px;
- padding: 20px;
- background: #f5f5f5;
+ grid-template-columns: 1fr 1fr;
  margin-bottom: 20px;
- border-radius: 4px;
+ padding: 20px;
  position: relative;
 }
 
 .trabalho::before{
+    background: linear-gradient(#b6f829, #67dd0a);
     content: "";
     display: block;
-    width: 10px;
     height: 20px;
-    background: linear-gradient(#b6f829, #67dd0a);
+    left: -4px;
     position: absolute;
     top: 20px;
-    left: -4px;
+    width: 10px;
 }
 
 .trabalho__ano{
-    position: absolute;
-    top: 22px;
-    left: -100px;
-    width: 80px;
-    text-align: right;
     color: #525252;
     font-size: .875rem;
+    position: absolute;
+    left: -100px;
+    text-align: right;
+    top: 22px;
+    width: 80px;
 }
 
 .trabalho__titulo{
+    line-height: 1.1;
     font-size: 1.125rem;
     font-weight: bold;
-    line-height: 1.1;
 }
 
 .trabalho__titulo a{
+    color: #000000 ;
      text-decoration: none;
-     color: #000000 ;
 }
 
 .trabalho__texto{
+    color: #525252;
     font-size: 0.875rem;
     line-height: 1.4;
-    color: #525252;
     max-width: 40ch;
 }
 
 .trabalho__habilidades{
+    align-items: start;
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
-    align-items: start;
 }
 
 .trabalho__habilidades li{
+    background: #ffffff;
+    border-radius: 4px;
     font-size: 0.875rem;
     line-height: 1.4;
-    border-radius: 4px;
-    background: #ffffff;
     padding: 5px 10px;
 }
 
 @media (max-width: 800px){
     .experiencia{
+        gap: 40px;
         grid-template-columns: 1fr;
-        gap: 40px
     }
 
     .experiencia__subtitulo{
@@ -105,8 +105,8 @@
     .trabalho__ano{
         position: initial;
         order: 1;
-        width: initial;
         text-align: left;
+        width: initial;
     }
     
     .trabalho__ano::before{

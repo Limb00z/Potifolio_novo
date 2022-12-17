@@ -1,6 +1,7 @@
 body{
+    background: rgb(233, 234, 236);
     color: #141414;
-    font-family: 'Fira Sans', arial, sans-serif;
+    font-family:  arial, sans-serif;
     margin: 0px;
 }
 
@@ -9,30 +10,30 @@ h1,h2,h3,p {
 }
 
 ul{
+    list-style: none;
     margin: 0px;
     padding: 0px;
-    list-style: none;
 }
 
 img{
-    max-width: 100%;
-    height: auto;
     display: block;
+    height: auto;
+    max-width: 100%;
 }
 
 .experiencia__subtitulo{
     font-size: 8rem ;
     line-height: 1;
+    max-width: 5ch;
     text-transform: uppercase;
     word-break: break-all;
-    max-width: 5ch;
 }
 
 @media (max-width: 800px){
     .experiencia__subtitulo {
         font-size: 4rem;
-        text-transform: capitalize;
         max-width: initial !important;
+        text-transform: capitalize;
     }
 
 }
